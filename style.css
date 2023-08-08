@@ -1,0 +1,280 @@
+ /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300&display=swap'); */
+
+ *
+ {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .container
+ {
+    width: 100%;
+    height: 100vh;  /* viewport height = 19.2px*/
+    background-color: #fff;
+    position: relative;
+ }
+
+ .navbar
+ {
+    display: flex; /* to display side by side  */
+    justify-content: space-between;/* space btw */
+    margin-left: 100px; 
+    align-items: center;
+    width: 85%;
+}
+.logo
+{
+   width: 130px;
+}
+.linkitems
+{
+   display: inline-block ; /* display in straight line */
+   margin: 10px 20px;
+    
+}
+.links
+{
+   text-decoration: none;/* to remove the underline in links */
+   font-weight: bold;
+   color: black;
+
+}
+/* pseudo class */
+
+
+/* select:pseudo{property:value} */
+.links:hover
+{
+   color:green;
+   /* font-size: 60px; */
+}
+
+.title
+{
+   margin-top: 17%;
+   margin-left: 8%;
+}
+.title_h1
+{
+   font-size: 40px;
+   margin-bottom: 20px;
+}
+#lastname
+{
+   color: #ffa500;
+}
+.download
+{
+   background-color: black;
+   color: #fff;
+   padding: 10px 20px;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 5px;
+   display: inline-block;
+   margin-top: 30px;
+
+}
+.images
+{
+   position: absolute;
+   width: 45%;
+   height: 80%;
+   bottom: 0px;
+   right: 30px;
+}
+.images img /* decender selector - inside the parent */
+{
+   position: absolute;
+   height: 100%;
+   left: 50%;
+   bottom: 0px;
+   transform: translateX(-50%);/* to remove side scroll */
+   transition: bottom 1s, left;/* to set seconds to hover */ 
+}
+.images:hover #shape
+{
+   bottom: 70px;
+}
+.images:hover #girl
+{
+   left:40%;
+}
+#about
+{
+   margin: 16% 8% 0px 8%;
+}
+.heading
+{
+   text-align: center;
+}
+
+.heading h2
+{
+   font-size: 30px;
+}
+.heading span
+{
+   font-size: 20px;
+   color: green;
+}
+.about_content
+{
+   display: grid;
+   grid-template-columns: repeat(2,1fr); /* fr-Frame */
+   gap: 2rem; /* 1rem = 16px  */
+   margin-top: 2rem;
+}
+.about-img img
+{
+   width: 80%;
+   border-radius: 1rem;
+}
+.about-details
+{
+   font-size: 18px;
+   font-weight: 400;
+   text-align: justify; /* to properly align side */
+}
+
+.information
+{
+   margin-top: 2rem;
+}
+
+.info-box
+{
+   margin-bottom: 1rem;
+}
+.info-box span
+{
+   margin-left: 1rem;
+}
+
+#skills
+{
+   margin: 8% 8% 0px 8%;
+}
+.skill-container
+{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 2rem;
+   margin-top: 2rem;
+}
+html
+{
+   scroll-behavior: smooth;
+}
+.skill-img img
+{
+   width: 85%;
+   padding-left: 4rem;
+}
+.bar-container
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0px;
+   position: relative; /* parent class will be relative for same position */
+}
+.base-bar
+{
+   width: 100%;
+   height: 0.5rem;
+   background-color: #080807;
+   border-radius: 3px;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+}
+.html-bar
+{
+   width: 90%;
+   background-color: #ffa500;
+}
+.css-bar
+{
+   width: 80%;
+   background-color: #ffa500;
+}
+.js-bar
+{
+   width: 85%;
+   background-color: #ffa500;
+}
+.react-bar
+{
+   width: 75%;
+   background-color: #ffa500;
+}
+.icon-set
+{
+   display: flex;
+   justify-content: center; /* horizontal center */
+   align-items: center;  /* vertical center */
+   margin-top: 3%;
+
+}
+.icons
+{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   /* border: 1px solid; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 10px;
+}
+.icons i
+{
+   font-size: 30px;
+   color: black;
+}
+.icons:hover
+{
+   background-image: linear-gradient(to bottom right,yellow,red);
+}
+.icons:hover i
+{
+   color: #fff;
+   animation: shake 0.75s; /* animation mode & seconds */
+}
+@keyframes shake
+{
+   10%{
+      transform: rotate(15deg);
+   }
+   20%{
+      transform: rotate(-15deg);
+   }
+   30%{
+      transform: rotate(15deg);
+   }
+   40%{
+      transform: rotate(-15deg);
+   }
+}
+
+footer
+{
+   margin: 3rem 0px;
+}
+.up-arrow
+{
+   float: right;
+   background-image: linear-gradient(to bottom right,yellow,red);
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.up-arrow:hover i
+{
+   color: #fff;
+}
